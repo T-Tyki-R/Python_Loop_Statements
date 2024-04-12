@@ -11,5 +11,5 @@ moodsList = ["Happy", "Sad", "Neutral", "Upset", "Calm", "Energetic"]
 weekList = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 
 for day in range(len(weekList)):
-    randMood = random.choice(moodsList)
+    randMood = random.choice(moodsList).lower()
     print(f"On {weekList[day]}, you were feeling {randMood}.")
