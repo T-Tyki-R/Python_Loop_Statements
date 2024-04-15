@@ -15,7 +15,5 @@ timeList = ["Morning", "Afternoon", "Night"]
 
 for day in range(len(weekList)):
     for time in range(len(timeList)): 
-        for mood in range(len(moodsList)):
-            randMood = random.choice(moodsList).lower()
-            randTime = random.choice(timeList).lower()   
-            print(f"On {weekList[day]} {randTime}, you were feeling {randMood}.") # Is this the expected result?
+            randMood = random.choice(moodsList).lower() 
+            print(f"On {weekList[day]} {timeList[time]}, you were feeling {randMood}.") # Is this the expected result?
